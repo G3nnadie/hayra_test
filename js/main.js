@@ -13,31 +13,46 @@ $(document).ready(function () {
   })
 
   $(document).mouseup(function (e) {
-  let modalContent = $(".search__form");
-  if (!modalContent.is(e.target) && modalContent.has(e.target).length === 0) {
-    $('.search__form').fadeOut(200);
-  }
-});
-
-  // Hero video play
-  const btnPlay = document.querySelector('.hero__video-play');
-  const heroVideo = document.querySelector('.hero__video');
-
-  let X = 0;
-  let Y = 0;
-
-  heroVideo.addEventListener("mousemove", function (event) {
-    X = event.clientX;
-    Y = event.clientY;
+    let modalContent = $(".search__form");
+    if (!modalContent.is(e.target) && modalContent.has(e.target).length === 0) {
+      $('.search__form').fadeOut(200);
+    }
   });
 
-  function move() {
-    btnPlay.style.left = X + 'px';
-    btnPlay.style.top = Y + 'px';
-    setTimeout(move, 10);
-  }
+  // Hero video play
+  // const btnPlay = document.querySelector('.hero__video-play');
+  // const heroVideo = document.querySelector('.hero');
 
-  move();
+  // let X = 0;
+  // let Y = 0;
+
+  // heroVideo.addEventListener("mousemove", function (event) {
+  //   X = event.clientX;
+  //   Y = event.clientY - 95;
+  // });
+
+  // function move() {
+  //   btnPlay.style.left = X + 'px';
+  //   btnPlay.style.top = Y + 'px';
+  //   setTimeout(move, 10);
+  // }
+
+  // move();
+
+  let div = document.querySelector('.hero');
+  let play = document.querySelector('.hero__video-play')
+
+  div.addEventListener('mousemove', (e) => {
+    let x = e.pageX,
+        y = e.pageY;
+
+    play.style.left = x - div.offsetLeft + 'px';
+    play.style.top = y - div.offsetTop + 'px';
+
+    console.log(`${x - div.offsetLeft}:${y-div.offsetTop}`);
+  }, {
+    capture: true
+  })
 
   // Video start && stop
   const video = $('video');

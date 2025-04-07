@@ -571,7 +571,7 @@ body {
   position: absolute;
   border-radius: 50%;
   width: 76px;height: 76px;
-  margin: 132px 0px 0px -38px;
+  margin: -190px 0px 0px -38px;
 }
 
 .hero__video-play svg {
