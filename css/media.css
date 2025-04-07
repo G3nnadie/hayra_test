@@ -1,0 +1,127 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@charset "UTF-8";
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1799px) {
+  
+}
+
+@media only screen and (max-width : 1439px) {
+  
+}
+
+@media only screen and (max-width : 1199px) {
+  
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+  
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  
+}
+
+@media only screen and (max-width : 575px) {
+  .hero__logo span {
+    top: 10px;right: 10px;
+  }
+  .hero__right {
+    padding-top: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  
+}
+
+@media only screen and (max-width : 359px) {
+  .search__form {
+    width: 230px;
+  }
+  .support__item--1 img {
+    right: 5px;
+    width: 170px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .container {
+    max-width: 970px;
+  }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .stock__body {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .stock__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .reports .slider__controls {
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 1440px) {
+  .container {
+    max-width: 1430px;
+  }
+}
+
+@media only screen and (min-width : 1800px) {
+  .container {
+    max-width: 1770px;
+  }
+}
